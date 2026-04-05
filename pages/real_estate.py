@@ -8,7 +8,7 @@ st.title("🏡 Real Estate Price Predictor (Random Forest)")
 # Load model
 @st.cache_resource
 def load_model():
-    return pickle.load(open("../models/rf_model_real_estate.pkl", "rb"))
+    return pickle.load(open("/models/rf_model_real_estate.pkl", "rb"))
 
 model = load_model()
 
